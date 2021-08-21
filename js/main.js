@@ -1,87 +1,124 @@
-jQuery(document).ready(function($) {
-
-	'use strict';
-
-        $(window).load(function() { // makes sure the whole site is loaded
-            $(".seq-preloader").fadeOut(); // will first fade out the loading animation
-            $(".sequence").delay(500).fadeOut("slow"); // will fade out the white DIV that covers the website.
-        })
-      
-        
-        $(function() {
-  
-        function showSlide(n) {
-            // n is relative position from current slide
-          
-            // unbind event listener to prevent retriggering
-            $body.unbind("mousewheel");
-          
-            // increment slide number by n and keep within boundaries
-            currSlide = Math.min(Math.max(0, currSlide + n), $slide.length-1);
-            
-            var displacment = window.innerWidth*currSlide;
-            // translate slides div across to appropriate slide
-            $slides.css('transform', 'translateX(-' + displacment + 'px)');
-            // delay before rebinding event to prevent retriggering
-            setTimeout(bind, 700);
-            
-            // change active class on link
-            $('nav a.active').removeClass('active');
-            $($('a')[currSlide]).addClass('active');
-            
+(function ($) {
+    "use strict";
+    
+    // Initiate the wowjs
+    new WOW().init();
+    
+    
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
         }
-      
-        function bind() {
-             $body.bind('false', mouseEvent);
-          }
-      
-        function mouseEvent(e, delta) {
-            // On down scroll, show next slide otherwise show prev slide
-            showSlide(delta >= 0 ? -1 : 1);
-            e.preventDefault();
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+    
+    
+    // Sticky Navbar
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('.navbar').addClass('nav-sticky');
+        } else {
+            $('.navbar').removeClass('nav-sticky');
         }
-        
-        $('nav a, .main-btn a').click(function(e) {
-            // When link clicked, find slide it points to
-            var newslide = parseInt($(this).attr('href')[1]);
-            // find how far it is from current slide
-            var diff = newslide - currSlide - 1;
-            showSlide(diff); // show that slide
-            e.preventDefault();
-        });
-      
-        $(window).resize(function(){
-          // Keep current slide to left of window on resize
-          var displacment = window.innerWidth*currSlide;
-          $slides.css('transform', 'translateX(-'+displacment+'px)');
-        });
-        
-        // cache
-        var $body = $('body');
-        var currSlide = 0;
-        var $slides = $('.slides');
-        var $slide = $('.slide');
-      
-        // give active class to first link
-        $($('nav a')[0]).addClass('active');
-        
-        // add event listener for mousescroll
-        $body.bind('false', mouseEvent);
-    })        
-
-
-        $('#form-submit .date').datepicker({
-        });
-
-
-        $(window).on("scroll", function() {
-            if($(window).scrollTop() > 100) {
-                $(".header").addClass("active");
+    });
+    
+    
+    // Dropdown on mouse hover
+    $(document).ready(function () {
+        function toggleNavbarMethod() {
+            if ($(window).width() > 992) {
+                $('.navbar .dropdown').on('mouseover', function () {
+                    $('.dropdown-toggle', this).trigger('click');
+                }).on('mouseout', function () {
+                    $('.dropdown-toggle', this).trigger('click').blur();
+                });
             } else {
-                //remove the background property so it comes transparent again (defined in your css)
-               $(".header").removeClass("active");
+                $('.navbar .dropdown').off('mouseover').off('mouseout');
             }
-        });
+        }
+        toggleNavbarMethod();
+        $(window).resize(toggleNavbarMethod);
+    });
 
 
-});
+    // Testimonials carousel
+    $(".testimonials-carousel").owlCarousel({
+        center: true,
+        autoplay: true,
+        dots: true,
+        loop: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        }
+    });
+    
+    
+    // Blogs carousel
+    $(".blog-carousel").owlCarousel({
+        autoplay: true,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        ],
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:1
+            },
+            768:{
+                items:2
+            }
+            
+        }
+    });
+    
+    
+    // Class filter
+    var classIsotope = $('.class-container').isotope({
+        itemSelector: '.class-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#class-filter li').on('click', function () {
+        $("#class-filter li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+        classIsotope.isotope({filter: $(this).data('filter')});
+    });
+    
+    
+    // Portfolio filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-filter li').on('click', function () {
+        $("#portfolio-filter li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+    
+})(jQuery);
+
