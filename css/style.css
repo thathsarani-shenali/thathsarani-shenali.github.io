@@ -20,7 +20,10 @@ a {
     color: #454545;
     transition: .3s;
 }
+/**-------------------------------------*/
 
+
+  /**-------------------------------------*/
 a:hover,
 a:active,
 a:focus {
@@ -41,7 +44,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #FF9270;
+    background: #585858;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -1892,7 +1895,7 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #000000;
+    background: #FF9270;
 }
 
 .footer .container-fluid {
