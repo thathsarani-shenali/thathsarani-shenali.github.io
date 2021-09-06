@@ -94,7 +94,12 @@
         }
     });
     
-    
+    //------------------------
+   
+    $("#pop").on("click", function() {
+        $(this).modal();
+     });
+     
     // Class filter
     var classIsotope = $('.class-container').isotope({
         itemSelector: '.class-item',
