@@ -4,382 +4,373 @@
     <meta charset="utf-8">
     <title>Thathsarani-Shenali</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free Website Template" name="keywords">
-    <meta content="Free Website Template" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Urbanist Font -->
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
 
     <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/wow/wow.js" rel="stylesheet">
-    <link href="lib/wow/wow.min.js" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df994632f5.js" crossorigin="anonymous"></script>
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mixins.css">
+    <!-- <link rel="stylesheet" href="css/loading_animation.css"> -->
+    
 </head>
 
 <body>
-    <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-            <div>
-                <img src="img/logo.png" />
-            </div>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="service.html" class="nav-item nav-link">Projects</a> <!--for Projects-->
-                    <a href="class.html" class="nav-item nav-link">Designs</a><!--for drawings-->
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 text-center">
+        <div class="side-menu mt-3 pt-5">
+          <img src="./img/profile-pic.png" alt="profile picture">
+          <h2>Thathsarani Shenali</h2>
+          <P class="secondary">UI Engineer</P>
+          <h4 class="pt-4">Get in touch</h4>
+          <div class="d-grid gap-3">
+            <div><i class="fa-solid fa-envelope fa-xl"></i> </div>
+            <div><i class="fa-brands fa-linkedin fa-xl"></i></div>
+            <div><i class="fa-brands fa-square-behance fa-xl"></i></div>
+            <div><i class="fa-brands fa-square-dribbble fa-xl"></i></div>
+          </div>
+          <p class="pt-5 secondary">© 2022. All Rights Reserved to 
+          <br/>Shenali Winodahewa</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-9">
+        <!-- navbar -->
+        <nav class="navbar fixed-top">
+          <div class="container-fluid justify-content-end">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link secondary" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link secondary" href="">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link secondary" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link secondary" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="banner text-center px-5">
+          <div class="banner-content">
+            <h1 class="main-title">Hi there!</h1>
+            <h5 class="pt-3"> I'm <b>Thathsarani Shenali</b>, <br/>a creative and passionate web designer and developer from Sri Lanka. </h5>
+            <p>
+              <br/>My portfolio is a window into my world of design, where I craft visually stunning and user-friendly experiences. Take a stroll through my work and you'll see my dedication to creating visually striking and professional designs that deliver results. 
+              <br/>Feel free to reach out if you have any questions or just want to connect.
+            </p>
+            <button type="button" class="btn btn-primary">Contact me <span><img src="./img/btn-arrow.svg" alt=""></span></button>    
+          </div>
+        </div>
+
+        <!-- portfolio -->
+        <div class="portfolio ps-5">
+          <div class="portfolio-content">
+            <ul class="nav nav-tabs nav-fill" id="portfolio" role="tablist">
+              <li class="nav-item" role="presentation">
+                <!-- <button class="nav-link active" id="ui-ux-designs" data-bs-toggle="tab" data-bs-target="#uiUxDesigns" type="button" role="tab" aria-controls="ui-ux-designs" aria-selected="true">UI/UX Designs</button> -->
+                <button class="nav-link active" id="uiux-tab" data-bs-toggle="tab" data-bs-target="#uiuxDesigns" type="button" role="tab" aria-controls="uiuxDesigns" aria-selected="true">UI/UX Designs</button> 
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="graphic-tab" data-bs-toggle="tab" data-bs-target="#graphic" type="button" role="tab" aria-controls="graphic" aria-selected="false">Graphic Designs</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="portrait-tab" data-bs-toggle="tab" data-bs-target="#portrait" type="button" role="tab" aria-controls="portrait" aria-selected="false">Pencil Portraits</button>
+              </li>
+            </ul>
+
+            <div class="tab-content text-center" id="portfolioContent">
+
+              <div class="tab-pane fade show active" id="uiuxDesigns" role="tabpanel" aria-labelledby="uiux-tab">
+                <h1 class="sub-title secondary pt-4">UI/UX Designs</h1>
+                <div class="container">
+                  <div class="row pb-5">
+                    <div class="col-lg-6 col-md-12 pt-5">
+                      <div class="text-start">
+                        <img src="./img/voyage.png" class="img-fluid" alt="product image">
+                        <h3><b>VOYAGE</b></h3>
+                        <P>'Voyage' is a mobile application, that provides services related to Redefine the travel through offering the ownership of the experience to the customer.</P>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#voyage-view-ui">
+                        Read Case Study <span><img src="./img/btn-arrow.svg" alt=""></span>
+                      </button>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 pt-5">
+                      <div class="text-start">
+                        <img src="./img/vivid.png" class="img-fluid" alt="product image" />
+                        <h3><b>VIVID</b></h3>
+                        <P>'VIVID' is a mobile application that enhances learning, exploring, and connecting features with the aid of solving the serious lack of education about the sexual and reproductive health of Sri Lankans.</P>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vivid-view-ui">
+                        Read Case Study <span><img src="./img/btn-arrow.svg" alt=""></span>
+                      </button>
+                    </div>
+                                    
+                    <div class="col-lg-6 col-md-12 pt-5">
+                      <div class="text-start">
+                        <img src="./img/petscorner.png" class="img-fluid" alt="product image" />
+                        <h3><b>PetsCorner</b></h3>
+                        <P>'Pets Corner' is a web application that provides services related to pets we meet in day-to-day life.</P>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#petscorner-view-ui">
+                        View UI  <span><img src="./img/btn-arrow.svg" alt=""></span>
+                      </button>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 pt-5">
+                      <div class="text-start">
+                        <a><img src="./img/plant-me.png" class="img-fluid" alt="product image" /></a>
+                        <h3><b>Plant Life</b></h3>
+                        <P>'Plant Life' is a mobile application, that enables services more than the plant selling to plant lovers.</P>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#plantlife-view-ui">
+                        View UI  <span><img src="./img/btn-arrow.svg" alt=""></span>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+                              
+                <!-- Modal -->
+                <!-- voyage -->
+                <div class="modal fade" id="voyage-view-ui" tabindex="-1" aria-labelledby="voyage-view-ui-ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="voyage-view-ui-ModalLabel"><b>Voyage -  Case Study</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="./img/voyage-case-study.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- vivid -->
+                <div class="modal fade" id="vivid-view-ui" tabindex="-1" aria-labelledby="vivid-view-ui-ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="vivid-view-ui-ModalLabel"><b>Vivid -  Case Study</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="./img/vivid-case-study.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- pets corner -->
+                <div class="modal fade" id="petscorner-view-ui" tabindex="-1" aria-labelledby="petscorner-view-ui-ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="petscorner-view-ui-ModalLabel"><b>Pets Corner -  UI Design</b></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      <div class="modal-body">
+                        <img src="./img/petscorner-lg.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- plant life  -->
+                <div class="modal fade" id="plantlife-view-ui" tabindex="-1" aria-labelledby="plantlife-view-ui-ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="plantlife-view-ui-ModalLabel"><b>Plant Life -  UI Design</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="./img/plantlife-lg.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="tab-pane fade text-center" id="graphic" role="tabpanel" aria-labelledby="graphic-tab">
+                <h1 class="sub-title secondary pt-4">Graphic Designs</h1>
+                <div class="row pt-4 pb-5">
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img
+                      src="./img/class-1.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Boat on Calm Water"
+                    />
+
+                    <img
+                      src="./img/class-7.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Wintry Mountain Landscape"
+                    />
+
+                    <img
+                      src="./img/crr.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Wintry Mountain Landscape"
+                    />
+
+                    <img
+                      src="./img/final-snny.png"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Wintry Mountain Landscape"
+                    />
+
+                  </div>
+
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                      src="./img/Puppy.gif"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Mountains in the Clouds"
+                    />
+
+                    <img
+                      src="./img/class-3.png"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Boat on Calm Water"
+                    />
+                    <img
+                      src="./img/class-9.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Yosemite National Park"
+                    />
+                  </div>
+
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                      src="./img/VesakDrawing.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Waves at Sea"
+                    />
+
+                    <img
+                      src="./img/class-5.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Yosemite National Park"
+                    />
+
+                    <img
+                      src="./img/ps-drawing.png"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Waves at Sea"
+                    />
                     
+                  </div>
                 </div>
+              </div>
+
+              <div class="tab-pane fade text-center" id="portrait" role="tabpanel" aria-labelledby="portrait-tab">
+                <h1 class="sub-title secondary pt-4">Pencil Portraits</h1>
+                <div class="row pt-4 pb-5">
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img
+                      src="./img/class-10.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Boat on Calm Water"
+                    />
+
+                    <img
+                      src="./img/class-11.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Wintry Mountain Landscape"
+                    />
+
+                    <img
+                      src="./img/class-56.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Wintry Mountain Landscape"
+                    />
+
+                  </div>
+
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                      src="./img/class-2.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Mountains in the Clouds"
+                    />
+
+                    <img
+                      src="./img/class-8.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Boat on Calm Water"
+                    />
+                    <img
+                      src="./img/class-12.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Yosemite National Park"
+                    />
+                  </div>
+
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                      src="./img/class-4.jpeg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Waves at Sea"
+                    />
+
+                    <img
+                      src="./img/class-6.jpg"
+                      class="w-100 shadow-1-strong rounded mb-4"
+                      alt="Yosemite National Park"
+                    />
+                    
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Nav Bar End -->
-    <!-- Hero Start -->
-    <div class="hero">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="hero-text">
-                        <h1>Thathsarani Shenali Vinodahewa</h1>
-                        <p>
-                            A passionate,hardworking, energetic and self-motivated information technology undergraduate with proven leadership skills.
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 d-none d-md-block">
-                    <div class="hero-image">
-                        <img src="img/hero.png" alt="Hero Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Hero End -->
-
-
-    <div class="blog">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h2>Projects</h2>
-            </div>
-            <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-1.jpg" alt="Blog">
-                    </div>
-                    <div class="blog-text">
-                        <h2>WATERrhythems web And Mobile Application</h2>
-                        <div class="blog-meta">
-                            <p>Web and mobile application for water enthusiastic people in USA</p>
-                        </div>
-
-                        <p>(2020-2021)</p>
-                        <p>
-                            A software system which represent the real time information about the given water body, make communities, navigate the different location in USA. <br />
-                            This also provide the facility to capture the images or videos through the application and edit it and upload it to the within the app and various social media platforms.
-                            Technologies:<br />
-                            <b>xamerin, Blazor, DotNet, PostgreSQL</b>
-                        </p>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-2.jpg" alt="Blog">
-                    </div>
-                    <div class="blog-text">
-                        <h2>Advanced Wood Smoothing Machine</h2>
-                        <div class="blog-meta">
-                            <p>(Undergraduate Level 1 group hardware Project)</p>
-                        </div>
-                        <p>Jan 2019 – Nov 2020</p>
-                        <p>
-                            Project descriptionLevel 01 "Hardware Project" is one of the compulsory modules in Information Technology degree program. On behalf of avoiding certain issues occurring in Wood Production Industry, our team (5 members) could design a machine for smoothing woods using a sandpaper disk, automatically.<br />
-                            I think, working with computer hardware and gaining knowledge about microcontrollers, circuits, sensors and motors is the best opportunity which I could get in Level 01.
-
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
-    <!-- Class Start -->
-    <div class="class">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h2>Designs</h2>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <ul id="class-filter">
-                        <li data-filter="*" class="filter-active">All Designs</li>
-                        <li data-filter=".filter-3">UI Designs</li>
-                        <li data-filter=".filter-1">Digital Drawings</li>
-                        <li data-filter=".filter-2">Pencil Drawings</li>
-                    </ul>
-                </div>
-            </div><div class="row class-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-3 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/pet.jpeg" id="pop">
-                                <img src="img/pet.jpeg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-3 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/pl.png" id="pop">
-                                <img src="img/pl.png" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-1.jpg" id="pop">
-                            <img src="img/class-1.jpg" alt="Image">
-                        </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-2.jpg" id="pop">
-                            <img src="img/class-2.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-3.png" id="pop">
-                            <img src="img/class-3.png" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-4.jpeg" id="pop">
-                            <img src="img/class-4.jpeg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-5.jpg" id="pop">
-                            <img src="img/class-5.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="1s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-6.jpg" id="pop">
-                            <img src="img/class-6.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-7.jpg" id="pop">
-                            <img src="img/class-7.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-8.jpg" id="pop">
-                            <img src="img/class-8.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp" data-wow-delay="1s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-9.jpg" id="pop">
-                            <img src="img/class-9.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-10.jpg" id="pop">
-                            <img src="img/class-10.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-11.jpg" id="pop">
-                            <img src="img/class-11.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="1s">
-                    <div class="class-wrap">
-                        <div class="class-img">
-                            <a href="img/class-12.jpg" id="pop">
-                            <img src="img/class-12.jpg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Class End -->
+  </div>
+        <!-- <div class="wrapper" id="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <span>Loading</span>
+        </div> -->
     
-    <!-- Discount Start -->
-    <div class="discount wow zoomIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="section-header text-center">
-                <div class="page-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Contact</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Page Header End -->
-                <!-- Contact Start -->
-                <div class="contact">
-                    <div class="container">
-                        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                            <p>Get In Touch</p>
-                            <h2>For Any Query</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.2s">
-                                        <i class="fa fa-map-marker-alt"></i>
-                                        <div class="contact-text">
-                                            <h2>Location</h2>
-                                            <p>No. 58/c, Walpola , Ruggahawila</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.4s">
-                                        <i class="fa fa-phone-alt"></i>
-                                        <div class="contact-text">
-                                            <h2>Phone</h2>
-                                            <p>+94 77 321 8474</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.6s">
-                                        <i class="far fa-envelope"></i>
-                                        <div class="contact-text">
-                                            <h2>Email</h2>
-                                            <p>shenalithath@gmail.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="contact-form">
-                                    <div id="success"></div>
-                                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                        <div class="control-group">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="control-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="control-group">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="control-group">
-                                            <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div>
-                                            <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Discount End -->
-    <!-- Footer Start -->
-    <div class="footer wow fadeIn" data-wow-delay="0.3s">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="footer-info">
 
-                    <h3>No.58/c,Walpola, Ruggahawila</h3>
-                    <div class="footer-menu">
-                        <p>+94 77 321 8474</p>
-                        <br/>
-                        <p>shenalithath@gmail.com</p>
-                    </div>
-                    <div class="footer-social">
-                        
-                        <a href="https://www.linkedin.com/in/thathsarani-shenali/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/thathsarani-shenali"><i class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/thathsarani.shenali.7"><i class="fab fa-facebook-f"></i></a>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <div class="container copyright">
-                <div class="row">
-                    <p>Copyright &copy; 2020 Thathsarani Shenali - Portfolio</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loader").style.visibility = "visible";
+            } else {
+                document.querySelector("#loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script> -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -392,5 +383,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
 </body>
 </html>
