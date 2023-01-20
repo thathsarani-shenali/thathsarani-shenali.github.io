@@ -1,36 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Thathsarani-Shenali</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <title>Thathsarani-Shenali</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- Urbanist Font -->
-    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+  <!-- Urbanist Font -->
+  <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
 
-    <!-- CSS Libraries -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/df994632f5.js" crossorigin="anonymous"></script>
+  <!-- CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/df994632f5.js" crossorigin="anonymous"></script>
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mixins.css">
-    <!-- <link rel="stylesheet" href="css/loading_animation.css"> -->
-    
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mixins.css">
+  <!-- <link rel="stylesheet" href="css/loading_animation.css"> -->
+
 </head>
 
 <body>
   <div class="container">
     <div class="row">
       <div class="col-lg-3 text-center">
-        <div class="side-menu mt-3 pt-5">
+        <div class="side-menu mt-3 pt-5 px-1">
           <img src="./img/profile-pic.png" alt="profile picture">
           <h2>Thathsarani Shenali</h2>
-          <P class="secondary">UI Engineer</P>
+          <P class="secondary">UI/UX Engineer</P>
           <h4 class="pt-4">Get in touch</h4>
           <div class="d-grid gap-3">
             <div><i class="fa-solid fa-envelope fa-xl"></i> </div>
@@ -38,312 +40,332 @@
             <div><i class="fa-brands fa-square-behance fa-xl"></i></div>
             <div><i class="fa-brands fa-square-dribbble fa-xl"></i></div>
           </div>
-          <p class="pt-5 secondary">© 2022. All Rights Reserved to 
-          <br/>Shenali Winodahewa</p>
+          <p class="pt-5 secondary">© 2023. All Rights Reserved to
+            <br />Shenali Winodahewa
+          </p>
         </div>
       </div>
-      
-      <div class="col-lg-9">
+
+      <div class="col-lg-9 px-4">
         <!-- navbar -->
-        <nav class="navbar fixed-top">
+        <nav class="navbar fixed-top" id="navbar">
           <div class="container-fluid justify-content-end">
             <ul class="nav justify-content-end">
               <li class="nav-item">
-                <a class="nav-link secondary" href="index.html">Home</a>
+                <a class="nav-link secondary" href="#banner">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link secondary" href="">About me</a>
+                <a class="nav-link secondary" href="aboutMe.html">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link secondary" href="portfolio.html">Portfolio</a>
+                <a class="nav-link secondary" href="#featuredWorks">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link secondary" href="#">Contact</a>
+                <a class="nav-link secondary" href="#contact-me">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
 
-        <!-- hero section -->
-        <div class="banner text-center px-5">
-          <div class="banner-content">
-            <h1 class="main-title">Hi there!</h1>
-            <h5 class="pt-3"> I'm <b>Thathsarani Shenali</b>, <br/>a creative and passionate web designer and developer from Sri Lanka. </h5>
-            <p>
-              <br/>My portfolio is a window into my world of design, where I craft visually stunning and user-friendly experiences. Take a stroll through my work and you'll see my dedication to creating visually striking and professional designs that deliver results. 
-              <br/>Feel free to reach out if you have any questions or just want to connect.
-            </p>
-            <button type="button" class="btn btn-primary">Contact me <span><img src="./img/btn-arrow.svg" alt=""></span></button>    
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
+          data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0" class="main-content">
+          <!-- hero section -->
+          <div class="banner text-center px-3" id="banner">
+            <div class="banner-content">
+              <h1 class="main-title">Hi there!</h1>
+              <h5 class="pt-3"> I'm <b>Thathsarani Shenali</b>, <br />a creative and passionate web designer and
+                developer from Sri Lanka. </h5>
+              <p>
+                <br />My portfolio is a window into my world of design, where I craft visually stunning and
+                user-friendly experiences. Take a stroll through my work and you'll see my dedication to creating
+                visually striking and professional designs that deliver results.
+                <br />Feel free to reach out if you have any questions or just want to connect.
+              </p>
+              <a type="button" class="btn btn-primary" href="#contact-me">Contact me <span><img
+                    src="./img/btn-arrow.svg" alt=""></span></a>
+            </div>
           </div>
-        </div>
 
-        <!-- portfolio -->
-        <div class="portfolio ps-5">
-          <div class="portfolio-content">
-            <ul class="nav nav-tabs nav-fill" id="portfolio" role="tablist">
-              <li class="nav-item" role="presentation">
-                <!-- <button class="nav-link active" id="ui-ux-designs" data-bs-toggle="tab" data-bs-target="#uiUxDesigns" type="button" role="tab" aria-controls="ui-ux-designs" aria-selected="true">UI/UX Designs</button> -->
-                <button class="nav-link active" id="uiux-tab" data-bs-toggle="tab" data-bs-target="#uiuxDesigns" type="button" role="tab" aria-controls="uiuxDesigns" aria-selected="true">UI/UX Designs</button> 
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="graphic-tab" data-bs-toggle="tab" data-bs-target="#graphic" type="button" role="tab" aria-controls="graphic" aria-selected="false">Graphic Designs</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="portrait-tab" data-bs-toggle="tab" data-bs-target="#portrait" type="button" role="tab" aria-controls="portrait" aria-selected="false">Pencil Portraits</button>
-              </li>
-            </ul>
+          <!-- portfolio -->
+          <div class="portfolio pt-5" id="featuredWorks">
+            <div class="portfolio-content px-3">
+              <div class="text-center">
+                <h1 class="sub-title secondary pt-5">Featured Works</h1>
+                <p>Here are some of my favourite projects, i have done lately. <br/>Feel free to check them out. </p>
+              </div>
+              <ul class="nav nav-tabs nav-fill" id="portfolio" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <!-- <button class="nav-link active" id="ui-ux-designs" data-bs-toggle="tab" data-bs-target="#uiUxDesigns" type="button" role="tab" aria-controls="ui-ux-designs" aria-selected="true">UI/UX Designs</button> -->
+                  <button class="nav-link active" id="uiux-tab" data-bs-toggle="tab" data-bs-target="#uiuxDesigns"
+                    type="button" role="tab" aria-controls="uiuxDesigns" aria-selected="true">UI/UX Designs</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="graphic-tab" data-bs-toggle="tab" data-bs-target="#graphic" type="button"
+                    role="tab" aria-controls="graphic" aria-selected="false">Graphic Designs</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="portrait-tab" data-bs-toggle="tab" data-bs-target="#portrait"
+                    type="button" role="tab" aria-controls="portrait" aria-selected="false">Pencil Portraits</button>
+                </li>
+              </ul>
 
-            <div class="tab-content text-center" id="portfolioContent">
+              <div class="tab-content text-center" id="portfolioContent">
+                <div class="tab-pane fade show active" id="uiuxDesigns" role="tabpanel" aria-labelledby="uiux-tab">
+                  <h1 class="sub-title secondary pt-4">UI/UX Designs</h1>
+                  <div class="container p-0">
+                    <div class="row pb-5">
+                      <div class="col-lg-6 col-md-12 py-4">
+                        <div class="text-start">
+                          <img src="./img/voyage.png" class="img-fluid" alt="product image">
+                          <h3><b>VOYAGE</b></h3>
+                          <P>'Voyage' is a mobile application, that provides services related to Redefine the travel
+                            through offering the ownership of the experience to the customer.</P>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                          data-bs-target="#voyage-view-ui">
+                          Read Case Study <span><img src="./img/btn-arrow.svg" alt=""></span>
+                        </button>
+                      </div>
 
-              <div class="tab-pane fade show active" id="uiuxDesigns" role="tabpanel" aria-labelledby="uiux-tab">
-                <h1 class="sub-title secondary pt-4">UI/UX Designs</h1>
-                <div class="container">
-                  <div class="row pb-5">
-                    <div class="col-lg-6 col-md-12 pt-5">
-                      <div class="text-start">
-                        <img src="./img/voyage.png" class="img-fluid" alt="product image">
-                        <h3><b>VOYAGE</b></h3>
-                        <P>'Voyage' is a mobile application, that provides services related to Redefine the travel through offering the ownership of the experience to the customer.</P>
+                      <div class="col-lg-6 col-md-12 py-4">
+                        <div class="text-start">
+                          <img src="./img/vivid.png" class="img-fluid" alt="product image" />
+                          <h3><b>VIVID</b></h3>
+                          <P>'VIVID' is a mobile application that enhances learning, exploring, and connecting features
+                            with the aid of solving the serious lack of education about the sexual and reproductive
+                            health of Sri Lankans.</P>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                          data-bs-target="#vivid-view-ui">
+                          Read Case Study <span><img src="./img/btn-arrow.svg" alt=""></span>
+                        </button>
                       </div>
-                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#voyage-view-ui">
-                        Read Case Study <span><img src="./img/btn-arrow.svg" alt=""></span>
-                      </button>
-                    </div>
 
-                    <div class="col-lg-6 col-md-12 pt-5">
-                      <div class="text-start">
-                        <img src="./img/vivid.png" class="img-fluid" alt="product image" />
-                        <h3><b>VIVID</b></h3>
-                        <P>'VIVID' is a mobile application that enhances learning, exploring, and connecting features with the aid of solving the serious lack of education about the sexual and reproductive health of Sri Lankans.</P>
+                      <div class="col-lg-6 col-md-12 py-4">
+                        <div class="text-start">
+                          <img src="./img/petscorner.png" class="img-fluid" alt="product image" />
+                          <h3><b>PetsCorner</b></h3>
+                          <P>'Pets Corner' is a web application that provides services related to pets we meet in
+                            day-to-day life.</P>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                          data-bs-target="#petscorner-view-ui">
+                          View UI <span><img src="./img/btn-arrow.svg" alt=""></span>
+                        </button>
                       </div>
-                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vivid-view-ui">
-                        Read Case Study <span><img src="./img/btn-arrow.svg" alt=""></span>
-                      </button>
-                    </div>
-                                    
-                    <div class="col-lg-6 col-md-12 pt-5">
-                      <div class="text-start">
-                        <img src="./img/petscorner.png" class="img-fluid" alt="product image" />
-                        <h3><b>PetsCorner</b></h3>
-                        <P>'Pets Corner' is a web application that provides services related to pets we meet in day-to-day life.</P>
-                      </div>
-                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#petscorner-view-ui">
-                        View UI  <span><img src="./img/btn-arrow.svg" alt=""></span>
-                      </button>
-                    </div>
 
-                    <div class="col-lg-6 col-md-12 pt-5">
-                      <div class="text-start">
-                        <a><img src="./img/plant-me.png" class="img-fluid" alt="product image" /></a>
-                        <h3><b>Plant Life</b></h3>
-                        <P>'Plant Life' is a mobile application, that enables services more than the plant selling to plant lovers.</P>
+                      <div class="col-lg-6 col-md-12 py-4">
+                        <div class="text-start">
+                          <a><img src="./img/plant-me.png" class="img-fluid" alt="product image" /></a>
+                          <h3><b>Plant Life</b></h3>
+                          <P>'Plant Life' is a mobile application, that enables services more than the plant selling to
+                            plant lovers.</P>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                          data-bs-target="#plantlife-view-ui">
+                          View UI <span><img src="./img/btn-arrow.svg" alt=""></span>
+                        </button>
                       </div>
-                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#plantlife-view-ui">
-                        View UI  <span><img src="./img/btn-arrow.svg" alt=""></span>
-                      </button>
-                    </div>
 
-                  </div>
-                </div>
-                              
-                <!-- Modal -->
-                <!-- voyage -->
-                <div class="modal fade" id="voyage-view-ui" tabindex="-1" aria-labelledby="voyage-view-ui-ModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="voyage-view-ui-ModalLabel"><b>Voyage -  Case Study</b></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="./img/voyage-case-study.png" alt="" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- vivid -->
-                <div class="modal fade" id="vivid-view-ui" tabindex="-1" aria-labelledby="vivid-view-ui-ModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="vivid-view-ui-ModalLabel"><b>Vivid -  Case Study</b></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="./img/vivid-case-study.png" alt="" class="img-fluid">
-                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- pets corner -->
-                <div class="modal fade" id="petscorner-view-ui" tabindex="-1" aria-labelledby="petscorner-view-ui-ModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                    <div class="modal-content">
+
+                  <!-- Modal -->
+                  <!-- voyage -->
+                  <div class="modal fade" id="voyage-view-ui" tabindex="-1" aria-labelledby="voyage-view-ui-ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                      <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="petscorner-view-ui-ModalLabel"><b>Pets Corner -  UI Design</b></h5>
+                          <h5 class="modal-title" id="voyage-view-ui-ModalLabel"><b>Voyage - Case Study</b></h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                      <div class="modal-body">
-                        <img src="./img/petscorner-lg.png" alt="" class="img-fluid">
+                        <div class="modal-body">
+                          <img src="./img/voyage-case-study.png" alt="" class="img-fluid" id="voyageImage">
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- plant life  -->
-                <div class="modal fade" id="plantlife-view-ui" tabindex="-1" aria-labelledby="plantlife-view-ui-ModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="plantlife-view-ui-ModalLabel"><b>Plant Life -  UI Design</b></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="./img/plantlife-lg.png" alt="" class="img-fluid">
+                  <!-- vivid -->
+                  <div class="modal fade" id="vivid-view-ui" tabindex="-1" aria-labelledby="vivid-view-ui-ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="vivid-view-ui-ModalLabel"><b>Vivid - Case Study</b></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="./img/vivid-case-study.png" alt="" class="img-fluid voyageImage">
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!-- pets corner -->
+                  <div class="modal fade" id="petscorner-view-ui" tabindex="-1"
+                    aria-labelledby="petscorner-view-ui-ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="petscorner-view-ui-ModalLabel"><b>Pets Corner - UI Design</b></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="./img/petscorner-lg.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- plant life  -->
+                  <div class="modal fade" id="plantlife-view-ui" tabindex="-1"
+                    aria-labelledby="plantlife-view-ui-ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="plantlife-view-ui-ModalLabel"><b>Plant Life - UI Design</b></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="./img/plantlife-lg.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-              
-              </div>
 
-              <div class="tab-pane fade text-center" id="graphic" role="tabpanel" aria-labelledby="graphic-tab">
-                <h1 class="sub-title secondary pt-4">Graphic Designs</h1>
-                <div class="row pt-4 pb-5">
-                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img
-                      src="./img/class-1.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Boat on Calm Water"
-                    />
+                <div class="tab-pane fade text-center" id="graphic" role="tabpanel" aria-labelledby="graphic-tab">
+                  <h1 class="sub-title secondary pt-4">Graphic Designs</h1>
+                  <div class="row pt-4 pb-5">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                      <img src="./img/class-1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
 
-                    <img
-                      src="./img/class-7.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Wintry Mountain Landscape"
-                    />
+                      <img src="./img/class-7.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
 
-                    <img
-                      src="./img/crr.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Wintry Mountain Landscape"
-                    />
+                      <img src="./img/crr.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
 
-                    <img
-                      src="./img/final-snny.png"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Wintry Mountain Landscape"
-                    />
+                      <img src="./img/final-snny.png" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
 
-                  </div>
+                    </div>
 
-                  <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img
-                      src="./img/Puppy.gif"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Mountains in the Clouds"
-                    />
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                      <img src="./img/Puppy.gif" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds" />
 
-                    <img
-                      src="./img/class-3.png"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Boat on Calm Water"
-                    />
-                    <img
-                      src="./img/class-9.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Yosemite National Park"
-                    />
-                  </div>
+                      <img src="./img/class-3.png" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
+                      <img src="./img/class-9.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park" />
+                    </div>
 
-                  <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img
-                      src="./img/VesakDrawing.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Waves at Sea"
-                    />
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                      <img src="./img/VesakDrawing.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
 
-                    <img
-                      src="./img/class-5.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Yosemite National Park"
-                    />
+                      <img src="./img/class-5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park" />
 
-                    <img
-                      src="./img/ps-drawing.png"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Waves at Sea"
-                    />
-                    
+                      <img src="./img/ps-drawing.png" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="tab-pane fade text-center" id="portrait" role="tabpanel" aria-labelledby="portrait-tab">
-                <h1 class="sub-title secondary pt-4">Pencil Portraits</h1>
-                <div class="row pt-4 pb-5">
-                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img
-                      src="./img/class-10.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Boat on Calm Water"
-                    />
+                <div class="tab-pane fade text-center" id="portrait" role="tabpanel" aria-labelledby="portrait-tab">
+                  <h1 class="sub-title secondary pt-4">Pencil Portraits</h1>
+                  <div class="row pt-4 pb-5">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                      <img src="./img/class-10.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
 
-                    <img
-                      src="./img/class-11.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Wintry Mountain Landscape"
-                    />
+                      <img src="./img/class-11.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
 
-                    <img
-                      src="./img/class-56.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Wintry Mountain Landscape"
-                    />
+                      <img src="./img/class-56.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
 
-                  </div>
+                    </div>
 
-                  <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img
-                      src="./img/class-2.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Mountains in the Clouds"
-                    />
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                      <img src="./img/class-2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds" />
 
-                    <img
-                      src="./img/class-8.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Boat on Calm Water"
-                    />
-                    <img
-                      src="./img/class-12.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Yosemite National Park"
-                    />
-                  </div>
+                      <img src="./img/class-8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
+                      <img src="./img/class-12.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park" />
+                    </div>
 
-                  <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img
-                      src="./img/class-4.jpeg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Waves at Sea"
-                    />
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                      <img src="./img/class-4.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
 
-                    <img
-                      src="./img/class-6.jpg"
-                      class="w-100 shadow-1-strong rounded mb-4"
-                      alt="Yosemite National Park"
-                    />
-                    
+                      <img src="./img/class-6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park" />
+
+                    </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
+
+          <!-- contact-me -->
+          <div class="contact-me px-3" id="contact-me">
+            <div class="contact-me-content">
+              <h1 class="secondary sub-title"><b>Contact Me</b></h1>
+              <form class="requires-validation" novalidate>
+                <div class="mt-3 pt-5">
+                  <div class="pb-4 mb-3">
+                    <label for="email" class="form-label">Your Email :</label>
+                    <input class="form-control input-feild" type="email" name="email"
+                      placeholder="Please enter your email." required>
+                    <div class="valid-feedback">Email field is valid!</div>
+                    <div class="invalid-feedback">Please enter valid Email</div>
+                  </div>
+                  <div class="pb-4  mb-3">
+                    <label for="subjectMessage" class="form-label">Subject :</label>
+                    <input class="form-control input-feild" type="text" name="name" placeholder="Full Name" required>
+                    <div class="valid-feedback">Subject field is valid!</div>
+                    <div class="invalid-feedback">Subject field cannot be blank!</div>
+                  </div>
+                  <div class="pb-4">
+                    <label for="message" class="form-label">Your Message :</label>
+                    <textarea class="form-control message-input" id="message" placeholder="Please enter your Message"
+                      required></textarea>
+                    <div class="valid-feedback">Message field is valid!</div>
+                    <div class="invalid-feedback">
+                      Subject field cannot be blank!
+                    </div>
+
+                  </div>
+                </div>
+                <div class="send-button text-center">
+                  <button type="submit" id="submit" class="btn btn-primary">Send <span><img
+                        src="./img/btn-arrow.svg"></span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="">
+            <a href="#" class="bottom-to-top-btn">Back to Top &#8593;</a>
+          </div>
+          
         </div>
+
+        <div class="about-me-content">
+          
+        </div>
+
+
       </div>
     </div>
   </div>
-        <!-- <div class="wrapper" id="loader">
+  <!-- <div class="wrapper" id="loader">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -352,9 +374,9 @@
             <div class="shadow"></div>
             <span>Loading</span>
         </div> -->
-    
 
-    <!-- <script>
+
+  <!-- <script>
         document.onreadystatechange = function() {
             if (document.readyState !== "complete") {
                 document.querySelector("body").style.visibility = "hidden";
@@ -366,23 +388,25 @@
         };
     </script> -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 body {
     font-family: 'Urbanist';
+    scroll-behavior: smooth;
 }
 
 .primary{
@@ -28,6 +29,7 @@ body {
     position: fixed;
     height: 100vh;
     width: inherit;
+    margin-left: -2%;
 }
 
 .navbar{
@@ -67,3 +69,69 @@ body {
     border-top-right-radius: 0 !important;
     border: none !important;
 }
+
+#portfolioContent .sub-title{
+    font-size: 35px !important;
+}
+/* contact me */
+.contact-me{
+    height: 100vh;
+    position: relative;
+}
+
+.contact-me .contact-me-content{
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 90%;
+}
+
+.contact-me .contact-me-content .input-feild{
+    border-bottom: 2px solid black !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: inherit;
+}
+
+.contact-me .contact-me-content .message-input{
+    border-bottom: 2px solid black !important;
+}
+
+.contact-me .contact-me-content .form-control:focus{
+    border: 1px solid #C3A2E4;
+}
+
+.contact-me .contact-me-content .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #C3A2E4;
+}
+
+.contact-me-page .contact-me-content {
+    padding: 15%;
+}
+
+
+
+/* enable scroll bottom to top */
+.bottom-to-top-btn {
+    --offset: 50px; 
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
