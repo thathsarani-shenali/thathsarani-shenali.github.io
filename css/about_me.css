@@ -1,0 +1,84 @@
+.introduction-about-me{
+    height: 100vh;
+    text-align: center;
+
+    /* background-color: black;
+    color: white !important;
+    background-image: url("../img/myimg-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.about-me-content{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.name-tag{
+    font-size: 50px;
+    font-weight: 800;
+    color: #32085C;
+}
+.name-tag-black{
+    color: black;
+}
+
+/* .img-hide-shape{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+} */
+.about-me-img{
+    /* max-height: 55%; 
+    max-width: 65%; */
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 15%;
+}
+
+.img-title-name{
+    position: absolute;
+    text-align: left;
+    font-size: 6vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    top: 40%;
+}
+.skills-content{
+    /* height: 100vh; */
+}
+.skills-card{
+    color: white;
+}
+.skills-card li{
+    list-style: none;
+}
+.skills-card:nth-child(1){
+    background-color: #32085C;
+}
+
+.skills-card:nth-child(2){
+    background-color: black;
+}
+
+.skills-card:nth-child(3){
+    background-color: #474647 ;
+}
+
+footer{
+    height: 5rem;
+    /* background-color: #474647;
+    color: white; */
+
+}
+footer .col-md-6{
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
