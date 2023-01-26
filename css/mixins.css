@@ -1,23 +1,41 @@
 @media only screen and (max-width: 480px) {
+    
     .img-title-name{
         left: 6%;
         top: 36% !important;
     }
-    .about-me-img{
-        left: 5% !important;
-    }
 }
 
 @media only screen and (max-width: 992px) {
+    
     .side-menu{
         display: none !important;
     }
     .main-title{
         font-size: 70px !important;
     }
-    .about-me-img{
-        left: 8% !important;
+    .introduction-about-me-sm{
+        display: block !important;
     }
+    .about-me-img-sm{
+        height: 30%;
+        width: auto;
+    }
+    .introduction-about-me{
+        display: none !important;
+    }
+    .name-tag{
+        /* color: white; */
+        font-size: 2rem !important;
+        font-weight: 800;
+    }
+    .position-tag{
+        font-size: 1.5rem !important;
+    }
+    .about-me-content p{
+        font-size: 1rem !important;
+    }
+
 }
 
 @media only screen and (min-width: 1150px) {

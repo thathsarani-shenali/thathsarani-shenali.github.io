@@ -1,13 +1,6 @@
 .introduction-about-me{
     height: 100vh;
     text-align: center;
-
-    /* background-color: black;
-    color: white !important;
-    background-image: url("../img/myimg-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 .about-me-content{
@@ -26,16 +19,7 @@
     color: black;
 }
 
-/* .img-hide-shape{
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 1;
-} */
 .about-me-img{
-    /* max-height: 55%; 
-    max-width: 65%; */
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -74,11 +58,12 @@
 
 footer{
     height: 5rem;
-    /* background-color: #474647;
-    color: white; */
-
 }
 footer .col-md-6{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+.introduction-about-me-sm{
+    display: none;
+    height: 100vh;
 }
