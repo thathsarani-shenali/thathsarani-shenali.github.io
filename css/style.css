@@ -18,13 +18,20 @@ body {
 }
 
 .main-title{
-    font-size: 8em;
+    font-size: 6rem;
 }
 
 .sub-title{
-    font-size: 6em;
+    font-size: 4rem;
 }
 
+.get-in-toch-links a{
+    text-decoration: none !important;
+    color: #000;
+}
+.get-in-toch-links a:hover , .get-in-toch-links a:active{
+    color: #32085C;
+}
 .side-menu{
     position: fixed;
     height: 100vh;
@@ -71,7 +78,7 @@ body {
 }
 
 #portfolioContent .sub-title{
-    font-size: 3em !important;
+    font-size: 2em !important;
 }
 /* contact me */
 .contact-me{

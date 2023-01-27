@@ -3,13 +3,6 @@
     text-align: center;
 }
 
-.about-me-content{
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
 .name-tag{
     font-size: 50px;
     font-weight: 800;
@@ -18,13 +11,8 @@
 .name-tag-black{
     color: black;
 }
-
-.about-me-img{
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 15%;
+.about-me-img-lg{
+    max-width: 70% !important;
 }
 
 .img-title-name{
@@ -35,9 +23,7 @@
     -webkit-text-stroke: 1px;
     top: 40%;
 }
-.skills-content{
-    /* height: 100vh; */
-}
+
 .skills-card{
     color: white;
 }
