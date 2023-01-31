@@ -43,14 +43,28 @@
         display: block !important;
     }
     .banner{
-        position: relative;
+        /* position: relative;
         overflow: auto;
         margin-top: 100pt;
-        min-height: 812px;
+        min-height: 812px; */
     }
 
 }
-
+@media only screen and (min-width: 992px) {
+    .banner{
+        height: 100vh;
+        position: relative;
+        padding-top: 15%;
+    }
+    
+    .banner-content{
+        margin: 0;
+        position: absolute;
+        top: 47%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
 @media only screen and (min-width: 1150px) {
     .side-menu{
         padding-right: 1% !important;

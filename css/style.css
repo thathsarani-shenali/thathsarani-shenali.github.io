@@ -60,16 +60,17 @@ body {
 }
 
 .banner{
-    height: 100vh;
-    position: relative;
+    /* height: 100vh;
+    position: relative; */
+    padding-top: 15%;
 }
 
 .banner-content{
-    margin: 0;
+    /* margin: 0;
     position: absolute;
     top: 47%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 /* portfolio */
