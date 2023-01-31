@@ -1,11 +1,13 @@
 @media only screen and (max-width: 480px) {
-    
     .img-title-name{
         left: 6%;
         top: 36% !important;
     }
-    .introduction-about-me{
+    .introduction-about-me, .sm-hide{
         display: none !important;
+    }
+    .sub-title{
+        font-size:2.5rem;
     }
 }
 
@@ -24,7 +26,7 @@
         height: 30%;
         width: auto;
     }
-    .introduction-about-me{
+    .introduction-about-me , .sm-hide{
         display: none !important;
     }
     .name-tag{
@@ -36,6 +38,15 @@
     }
     .about-me-content p{
         font-size: 1rem !important;
+    }
+    .sm-profiles, .sm-profile-pic{
+        display: block !important;
+    }
+    .banner{
+        position: relative;
+        overflow: auto;
+        margin-top: 100pt;
+        min-height: 812px;
     }
 
 }
@@ -51,3 +62,17 @@
         top: 57% !important;
     }
 }
+
+@media only screen and (max-width: 1399px){
+    #achievemensts .col-full-width{
+        flex: 0 0 auto;
+        width: 100% !important;
+    }
+}
+
+/* @media only screen and (min-width: 1400px){
+    #achievemensts .col-full-width{
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+} */

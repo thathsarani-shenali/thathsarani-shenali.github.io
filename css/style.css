@@ -24,12 +24,28 @@ body {
 .sub-title{
     font-size: 4rem;
 }
-
-.get-in-toch-links a{
-    text-decoration: none !important;
-    color: #000;
+.sm-profiles , .sm-profile-pic {
+    display: none;
 }
-.get-in-toch-links a:hover , .get-in-toch-links a:active{
+
+/* burger icon */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(50,8,92)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+.custom-toggler.navbar-toggler {
+    border-color: none;
+} 
+.custom-toggler.navbar-toggler:hover ,.custom-toggler.navbar-toggler:focus, .custom-toggler.navbar-toggler:active{
+    border-color: #fff;
+} 
+
+.get-in-toch-links a ,.sm-profiles a{
+    text-decoration: none !important;
+    color: #474647;
+}
+
+.get-in-toch-links a:hover , .get-in-toch-links a:active, .sm-profiles a:hover , .sm-profiles a:active{
     color: #32085C;
 }
 .side-menu{
@@ -147,3 +163,10 @@ body {
     fill: #000 transparent;
     stroke: #000 2px;
 }
+
+.text-justified{
+    text-align: justify;
+}
+
+
+/* navbar-icon */
