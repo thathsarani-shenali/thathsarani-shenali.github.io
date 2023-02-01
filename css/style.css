@@ -171,3 +171,36 @@ body {
 
 
 /* navbar-icon */
+.success {
+    display: none;
+    background: #E1F8ED;
+    padding: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+  }
+  .success .is-active {
+    display: block;
+  }
+
+
+  /* achievements */
+img {
+    max-width: 100%
+}
+
+.award {
+    /* width: 500px;
+    margin: 30px auto; */
+}
+
+.img-right {
+    width: 300px;
+    float: right;
+    margin: 0 15px 0;
+    height: max-content;
+}
+
+.award-description p{
+    text-align: justify;
+}
