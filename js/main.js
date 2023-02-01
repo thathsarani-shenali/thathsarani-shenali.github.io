@@ -16,4 +16,4 @@ $('.nav-link').on('click',function() {
       $('.navbar-collapse').collapse('hide');
 });
       
-// navbar icon change animation
+// contact me 

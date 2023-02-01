@@ -459,25 +459,25 @@
             <div class="contact-me-content">
               <h1 class="secondary sub-title"><b>Contact Me</b></h1>
               <!-- <p>Get in touch with me via social media or email.</p> -->
-              
-              <form class="requires-validation" novalidate>
+              <form class="requires-validation" action="https://getform.io/f/ae8caf77-60be-4891-adc3-f22a7db4c4a3" method="POST" novalidate>
                 <div class="mt-3 pt-5">
                   <div class="pb-4 mb-3">
+                    <input type="hidden" name="_gotcha" style="display:none !important">
                     <label for="email" class="form-label">Your Email :</label>
-                    <input class="form-control input-feild" type="email" name="email"
+                    <input id="email" class="form-control input-feild" type="email" name="email" 
                       placeholder="Please enter your email." required>
                     <div class="valid-feedback">Email field is valid!</div>
                     <div class="invalid-feedback">Please enter valid Email</div>
                   </div>
                   <div class="pb-4  mb-3">
-                    <label for="subjectMessage" class="form-label">Subject :</label>
-                    <input class="form-control input-feild" type="text" name="name" placeholder="Full Name" required>
-                    <div class="valid-feedback">Subject field is valid!</div>
-                    <div class="invalid-feedback">Subject field cannot be blank!</div>
+                    <label for="subjectMessage" class="form-label">Name :</label>
+                    <input id="name" class="form-control input-feild" type="text" name="name" placeholder="Full Name" required>
+                    <div class="valid-feedback">Name field is valid!</div>
+                    <div class="invalid-feedback">Name field cannot be blank!</div>
                   </div>
                   <div class="pb-4">
                     <label for="message" class="form-label">Your Message :</label>
-                    <textarea class="form-control message-input" id="message" placeholder="Please enter your Message"
+                    <textarea class="form-control message-input" id="message" name="message" type="text" placeholder="Please enter your Message"
                       required></textarea>
                     <div class="valid-feedback">Message field is valid!</div>
                     <div class="invalid-feedback">
@@ -548,7 +548,9 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
-
+  <script>
+    
+  </script>
 </body>
 
 </html>
