@@ -195,7 +195,7 @@ img {
 }
 
 .img-right {
-    width: 300px;
+    max-width: 400px;
     float: right;
     margin: 0 15px 0;
     height: max-content;
@@ -203,4 +203,11 @@ img {
 
 .award-description p{
     text-align: justify;
+}
+
+.img-left {
+    max-width: 400px;
+    float: left;
+    margin: 0 15px 0;
+    height: max-content;
 }
