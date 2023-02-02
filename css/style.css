@@ -15,6 +15,12 @@ body {
 .btn-primary{
     background-color: #32085C !important;
     border-color: #32085C !important;
+    transition: background-color 1s;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-secondary:hover, .btn-secondary:focus {
+    background: linear-gradient(90deg, #050505, transparent) #050505;
+    color: #fff;
+    border-color: #32085C00 !important;
 }
 
 .main-title{
@@ -60,17 +66,7 @@ body {
 }
 
 .banner{
-    /* height: 100vh;
-    position: relative; */
     padding-top: 15%;
-}
-
-.banner-content{
-    /* margin: 0;
-    position: absolute;
-    top: 47%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); */
 }
 
 /* portfolio */
@@ -137,8 +133,6 @@ body {
     padding: 15%;
 }
 
-
-
 /* enable scroll bottom to top */
 .bottom-to-top-btn {
     --offset: 50px; 
@@ -169,7 +163,6 @@ body {
     text-align: justify;
 }
 
-
 /* navbar-icon */
 .success {
     display: none;
@@ -182,7 +175,6 @@ body {
   .success .is-active {
     display: block;
   }
-
 
   /* achievements */
 img {
